@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: start minikube
       run: |
-        sudo inikube start --driver=none
+        sudo minikube start --driver=none
         sudo minikube addons enable ingress
         sudo minikube addons enable ingress-dns
         sudo minikube addons enable metallb
